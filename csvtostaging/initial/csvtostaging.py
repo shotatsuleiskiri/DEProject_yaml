@@ -4,7 +4,7 @@ import pandas as pd
 from sqlalchemy import create_engine 
 
 # read data into Df
-data = pd.read_csv("/Users//ramazkapanadze/Downloads/sales_data_sample.csv",  encoding='Latin-1')
+data = pd.read_csv("/Users//mariammakharadze/Downloads/sales_data_sample.csv",  encoding='Latin-1')
 df = pd.DataFrame(data)
 
 utils.fillstaging(df,'DBStaging','sales','sales_data')
